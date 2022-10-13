@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact Form</title>
 </head>
-
 <body>
+    <main>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        
+        <form action="./index2.html" netlify method="post">
+            <fieldset>
+                <legend><h3>Contact Details</h3></legend>
+                
+                <p>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="Firstname" required>
+                </p>
+                
+                <p>
+                    <label for="lastName">last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Lastname" required>
+                </p>
 
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </p>
+
+                <p>
+                    <label for="phoneNumber">Phone Number :</label><br>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" maxlength="12" minlength="10">
+                </p>
+
+            </fieldset>
+
+          
+            <fieldset>
+                <legend><h3>Message Box</h3></legend>
+
+                <label for="text">Drop your message below:</label>
+                <br>
+                
+                <textarea id="text" name="text" rows="7" cols="40" placeholder="Enter your text here" resize="none"  required></textarea>
+
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+
+            </p>
+
+        </form>
+    </main>
 </body>
-
 </html>
 
-Things to do
-This page should contain relevant information for contacting you. You can plan for this to be a form (as we will cover
-forms soon). You can provide other details on this page like your email, LinkedIn profile link, GitHub link (to your
-public projects), etc
